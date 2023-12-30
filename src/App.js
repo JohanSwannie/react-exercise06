@@ -1,7 +1,12 @@
+import DogPics from "./DogPics";
 import "./App.css";
 
 function App() {
-  return <div className="App">AUTO SPARES</div>;
+  return (
+    <div className="App">
+      <DogPics />
+    </div>
+  );
 }
 
 export default App;
