@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.dog-button {
+  background-color: blue;
+  color: #fff;
+  padding: 0.4rem;
+  margin-top: 1rem;
+}
