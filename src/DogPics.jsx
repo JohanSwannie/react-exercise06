@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const DogPics = () => {
-  const [dogPicture, setDogPicture] = useState("");
+  const [dogPicture, setDogPicture] = useState(
+    "https://images.dog.ceo/breeds/buhund-norwegian/hakon1.jpg"
+  );
 
   const getDogPicture = async () => {
     const response = await fetch("https://dog.ceo/api/breeds/image/random");
@@ -9,13 +11,9 @@ const DogPics = () => {
     return doggie.message;
   };
 
-  useEffect(() => {
-    getDogPicture().then((picture) => setDogPicture(picture));
-  }, []);
-
   return (
     <div>
-      <img src={dogPicture} width="600" height="510" alt="dogpic" />
+      <img src={dogPicture} width="700" height="510" alt="dogpic" />
       <br />
       <button
         className="dog-button"
