@@ -17,7 +17,7 @@ const DogPics = () => {
       <br />
       <button
         className="dog-button"
-        onClick={async (event) => setDogPicture(await getDogPicture())}
+        onClick={async () => setDogPicture(await getDogPicture())}
       >
         Click for another dog
       </button>
